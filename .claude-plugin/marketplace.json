@@ -1,0 +1,12 @@
+{
+  "name": "kha-marketplace",
+  "owner": { "name": "KHA Entertainment" },
+  "description": "KHA Entertainment plugin marketplace",
+  "plugins": [
+    {
+      "name": "view-limits",
+      "source": { "source": "github", "repo": "KHAEntertainment/view-limits" },
+      "description": "Check coding-plan credit and rate-limit status across providers before dispatching sub-agents."
+    }
+  ]
+}
