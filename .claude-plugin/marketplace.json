@@ -5,7 +5,7 @@
   "plugins": [
     {
       "name": "view-limits",
-      "source": { "source": "github", "repo": "KHAEntertainment/view-limits" },
+      "source": { "source": "url", "url": "https://github.com/KHAEntertainment/view-limits.git" },
       "description": "Check coding-plan credit and rate-limit status across providers before dispatching sub-agents."
     }
   ]
