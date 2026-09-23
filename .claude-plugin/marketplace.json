@@ -7,6 +7,11 @@
       "name": "view-limits",
       "source": { "source": "url", "url": "https://github.com/KHAEntertainment/view-limits.git" },
       "description": "Check coding-plan credit and rate-limit status across providers before dispatching sub-agents."
+    },
+    {
+      "name": "jev",
+      "source": { "source": "url", "url": "https://github.com/KHAEntertainment/jev-skill.git" },
+      "description": "Decide when and how to integrate TypeSafe's Jev decision model: access paths (TypeSafe, OpenRouter, Vercel, Cloudflare), framework choice, harness patterns (tool gates, routers, triage), calibration and production ops."
     }
   ]
 }

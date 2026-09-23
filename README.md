@@ -11,12 +11,18 @@ when installing plugins.
 - **view-limits** — check coding-plan credit / rate-limit status across providers
   (MiniMax, Kimi, GLM, DeepSeek, OpenRouter) before dispatching sub-agents.
   Source: `https://github.com/KHAEntertainment/view-limits`.
+- **jev** — decide when and how to integrate TypeSafe's Jev decision model: fit test,
+  access paths (TypeSafe, OpenRouter, Vercel AI SDK/Gateway, Cloudflare), framework
+  choice, harness patterns (tool-call gates, routers, triage), calibration and ops.
+  Pairs with TypeSafe's official `typesafe-ai/skills`.
+  Source: `https://github.com/KHAEntertainment/jev-skill`.
 
 ## Install
 
 ```sh
 claude plugin marketplace add KHAEntertainment/marketplace
 claude plugin install view-limits@kha-marketplace
+claude plugin install jev@kha-marketplace
 ```
 
 Or, inside a Claude Code session:
@@ -24,6 +30,7 @@ Or, inside a Claude Code session:
 ```
 /plugin marketplace add KHAEntertainment/marketplace
 /plugin install view-limits@kha-marketplace
+/plugin install jev@kha-marketplace
 ```
 
 ## Repository rename and existing contributors
