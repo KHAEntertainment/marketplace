@@ -16,11 +16,12 @@
     {
       "name": "enigma",
       "source": {
-        "source": "git",
+        "source": "git-subdir",
         "url": "https://github.com/Clarit-AI/enigma.git",
+        "path": "plugins/enigma",
         "ref": "enigma--v0.3.0"
       },
-      "description": "Local-only MCP secret request/reveal server (CLI + Claude Code plugin): request a named secret via a one-shot URL, the user pastes or denies in a tiny HTML form, the model receives it via reveal only at the moment of use (ADR-001). Repo-level project scope (0.3.0): secrets saved from worktrees/symlinked paths/submodules need `enigma migrate-scope` after upgrade."
+      "description": "Local-only MCP secret request/reveal server (CLI + Claude Code plugin): request a named secret via a one-time URL; the value never returns to the agent. `enigma_reveal` discloses it to the human directly; `enigma run` injects it into a child process's environment (ADR-001). Repo-level project scope (0.3.0): secrets saved from a worktree, symlinked clone path, or submodule need `enigma migrate-scope` after upgrade."
     }
   ]
 }

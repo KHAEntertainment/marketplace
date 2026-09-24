@@ -17,12 +17,14 @@ when installing plugins.
   Pairs with TypeSafe's official `typesafe-ai/skills`.
   Source: `https://github.com/KHAEntertainment/jev-skill`.
 - **enigma** — local-only MCP secret request/reveal server (CLI + Claude Code plugin):
-  request a named secret via a one-shot URL, the user pastes or denies in a tiny HTML
-  form, the model receives it via reveal only at the moment of use (ADR-001). The
-  0.3.0 release pins repo-level project scope: secrets saved from a worktree,
-  symlinked clone path, or submodule need `enigma migrate-scope` after upgrade.
-  Pinned to tag `enigma--v0.3.0` via the manifest's `source.ref`, not to a branch.
-  Source: `https://github.com/Clarit-AI/enigma.git`.
+  request a named secret via a one-time URL; the value never returns to the
+  agent. `enigma_reveal` discloses it to the human directly; `enigma run`
+  injects it into a child process's environment (ADR-001). The 0.3.0 release
+  pins repo-level project scope: secrets saved from a worktree, symlinked
+  clone path, or submodule need `enigma migrate-scope` after upgrade. Pinned
+  to tag `enigma--v0.3.0` via the manifest's `source.ref`; the plugin lives at
+  `plugins/enigma/` in the source repo (git-subdir source type). Source:
+  `https://github.com/Clarit-AI/enigma.git`.
 
 ## Install
 
