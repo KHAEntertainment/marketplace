@@ -21,7 +21,7 @@
         "path": "plugins/enigma",
         "ref": "enigma--v0.3.0"
       },
-      "description": "Local-only MCP secret request/reveal server (CLI + Claude Code plugin): request a named secret via a one-time URL; the value never returns to the agent. `enigma_reveal` discloses it to the human directly; `enigma run` injects it into a child process's environment (ADR-001). Repo-level project scope (0.3.0): secrets saved from a worktree, symlinked clone path, or submodule need `enigma migrate-scope` after upgrade."
+      "description": "Local-only MCP secret request/reveal server (CLI + Claude Code plugin): request a named secret via a one-time URL; the value is not returned in MCP tool responses, but child-process output can expose it. `enigma_reveal` discloses it to the human directly; `enigma run` injects it into a child process's environment (ADR-001). Repo-level project scope (0.3.0): secrets saved from a worktree, symlinked clone path, or submodule need `enigma migrate-scope` after upgrade."
     }
   ]
 }
