@@ -16,6 +16,16 @@ when installing plugins.
   choice, harness patterns (tool-call gates, routers, triage), calibration and ops.
   Pairs with TypeSafe's official `typesafe-ai/skills`.
   Source: `https://github.com/KHAEntertainment/jev-skill`.
+- **enigma** — local-only MCP secret request/reveal server (CLI + Claude Code plugin):
+  request a named secret via a one-time URL; the value is not returned in MCP
+  tool responses, but child-process output can expose it (e.g. `enigma run --
+  printenv NAME`). `enigma_reveal` discloses it to the human directly;
+  `enigma run` injects it into a child process's environment (ADR-001).
+  The 0.3.0 release pins repo-level project scope: secrets saved from a
+  worktree, symlinked clone path, or submodule need `enigma migrate-scope`
+  after upgrade. Pinned to tag `enigma--v0.3.0` via the manifest's
+  `source.ref`; the plugin lives at `plugins/enigma/` in the source repo
+  (git-subdir source type). Source: `https://github.com/Clarit-AI/enigma.git`.
 
 ## Install
 
@@ -23,6 +33,7 @@ when installing plugins.
 claude plugin marketplace add KHAEntertainment/marketplace
 claude plugin install view-limits@kha-marketplace
 claude plugin install jev@kha-marketplace
+claude plugin install enigma@kha-marketplace   # installs enigma--v0.3.0
 ```
 
 Or, inside a Claude Code session:
@@ -31,6 +42,7 @@ Or, inside a Claude Code session:
 /plugin marketplace add KHAEntertainment/marketplace
 /plugin install view-limits@kha-marketplace
 /plugin install jev@kha-marketplace
+/plugin install enigma@kha-marketplace
 ```
 
 ## Repository rename and existing contributors

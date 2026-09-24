@@ -12,6 +12,16 @@
       "name": "jev",
       "source": { "source": "url", "url": "https://github.com/KHAEntertainment/jev-skill.git" },
       "description": "Decide when and how to integrate TypeSafe's Jev decision model: access paths (TypeSafe, OpenRouter, Vercel, Cloudflare), framework choice, harness patterns (tool gates, routers, triage), calibration and production ops."
+    },
+    {
+      "name": "enigma",
+      "source": {
+        "source": "git-subdir",
+        "url": "https://github.com/Clarit-AI/enigma.git",
+        "path": "plugins/enigma",
+        "ref": "enigma--v0.3.0"
+      },
+      "description": "Local-only MCP secret request/reveal server (CLI + Claude Code plugin): request a named secret via a one-time URL; the value is not returned in MCP tool responses, but child-process output can expose it. `enigma_reveal` discloses it to the human directly; `enigma run` injects it into a child process's environment (ADR-001). Repo-level project scope (0.3.0): secrets saved from a worktree, symlinked clone path, or submodule need `enigma migrate-scope` after upgrade."
     }
   ]
 }
