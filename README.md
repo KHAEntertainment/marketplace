@@ -26,6 +26,10 @@ when installing plugins.
   after upgrade. Pinned to tag `enigma--v0.3.0` via the manifest's
   `source.ref`; the plugin lives at `plugins/enigma/` in the source repo
   (git-subdir source type). Source: `https://github.com/Clarit-AI/enigma.git`.
+- **claude-code-dev-kit** — author Claude Code skills, hooks, subagents and plugins
+  against the live code.claude.com docs instead of stale training data or bundled
+  guides. Ships the `claude-code-authoring` skill.
+  Source: `https://github.com/KHAEntertainment/claude-code-dev-kit`.
 
 ## Install
 
@@ -34,6 +38,7 @@ claude plugin marketplace add KHAEntertainment/marketplace
 claude plugin install view-limits@kha-marketplace
 claude plugin install jev@kha-marketplace
 claude plugin install enigma@kha-marketplace   # installs enigma--v0.3.0
+claude plugin install claude-code-dev-kit@kha-marketplace
 ```
 
 Or, inside a Claude Code session:
@@ -43,6 +48,7 @@ Or, inside a Claude Code session:
 /plugin install view-limits@kha-marketplace
 /plugin install jev@kha-marketplace
 /plugin install enigma@kha-marketplace
+/plugin install claude-code-dev-kit@kha-marketplace
 ```
 
 ## Repository rename and existing contributors
