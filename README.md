@@ -14,7 +14,7 @@ resolves to a known version and does not silently drift.
 | Plugin | Pin | Notes |
 |---|---|---|
 | `view-limits` | *unpinned* | Tracks `main`. No release tags exist yet — see below. |
-| `jev` | `v0.1.0` | |
+| `jev` | `v0.1.1` | |
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
 | `dev-skill` | `v2.1.1` | |
