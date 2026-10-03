@@ -13,7 +13,7 @@ resolves to a known version and does not silently drift.
 
 | Plugin | Pin | Notes |
 |---|---|---|
-| `view-limits` | *unpinned* | Tracks `main`. No release tags exist yet — see below. |
+| `view-limits` | `v0.1.27` | Tags are cut automatically on each `plugin.json` version bump. |
 | `jev` | `v0.1.1` | |
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
@@ -37,10 +37,6 @@ fails when:
 only, so a dead pin passes validation and fails at install time. Unpinned
 entries are reported as warnings rather than failures; pinning is a deliberate
 per-plugin choice.
-
-`view-limits` is the one exception and is deliberately left tracking `main`
-until it publishes its first release tag. Its catalog pin should be added in the
-same PR that creates that tag.
 
 ## Plugins
 
