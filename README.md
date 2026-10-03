@@ -22,6 +22,22 @@ resolves to a known version and does not silently drift.
 Cutting a release in a source repo does **not** reach users on its own: bump
 that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
 
+### CI guards this
+
+[`verify-catalog`](.github/workflows/verify-catalog.yml) resolves every entry
+on each PR and weekly, cloning **anonymously** the way a real user does. It
+fails when:
+
+- `source.ref` does not exist, or the source repo is not publicly readable
+- the plugin name at that ref no longer matches the catalog entry name
+- an entry declares a `version` that differs from the ref's manifest
+- a plugin name uses a prefix Anthropic reserves (`claude-`, `anthropic-`, …)
+
+`claude plugin validate` does **not** cover these — it checks manifest shape
+only, so a dead pin passes validation and fails at install time. Unpinned
+entries are reported as warnings rather than failures; pinning is a deliberate
+per-plugin choice.
+
 `view-limits` is the one exception and is deliberately left tracking `main`
 until it publishes its first release tag. Its catalog pin should be added in the
 same PR that creates that tag.

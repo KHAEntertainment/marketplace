@@ -1,0 +1,38 @@
+name: Verify catalog
+
+# `claude plugin validate` only checks manifest shape. It does not check that a
+# plugin's `source.ref` exists, so a pin pointing at a nonexistent tag passes
+# validation and fails at install time. This resolves every entry the way a real
+# user does.
+#
+# Clones are deliberately credential-free. With the default GITHUB_TOKEN this
+# job could clone a private repo and report success, while every actual user got
+# "fatal: unable to get password from user". Checking anonymously is the point.
+
+on:
+  pull_request:
+    paths:
+      - ".claude-plugin/marketplace.json"
+      - "scripts/verify-catalog.sh"
+      - ".github/workflows/verify-catalog.yml"
+  push:
+    branches: [main]
+  schedule:
+    # Weekly. Catches drift this repo cannot cause itself: a source repo
+    # deleting or moving a release tag, or renaming its plugin after the fact.
+    - cron: "17 6 * * 1"
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify every catalog entry resolves anonymously
+        run: ./scripts/verify-catalog.sh
+
+      - name: Validate manifest shape
+        run: npx --yes @anthropic-ai/claude-code plugin validate .
