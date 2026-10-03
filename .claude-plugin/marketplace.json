@@ -10,7 +10,11 @@
     },
     {
       "name": "jev",
-      "source": { "source": "url", "url": "https://github.com/KHAEntertainment/jev-skill.git" },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/jev-skill.git",
+        "ref": "v0.1.0"
+      },
       "description": "Decide when and how to integrate TypeSafe's Jev decision model: access paths (TypeSafe, OpenRouter, Vercel, Cloudflare), framework choice, harness patterns (tool gates, routers, triage), calibration and production ops."
     },
     {
@@ -25,7 +29,11 @@
     },
     {
       "name": "authoring-kit",
-      "source": { "source": "url", "url": "https://github.com/KHAEntertainment/claude-code-dev-kit.git" },
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/claude-code-dev-kit.git",
+        "ref": "v0.1.0"
+      },
       "description": "Author Claude Code skills, hooks, subagents and plugins against the live code.claude.com docs instead of stale training data or bundled guides."
     },
     {
