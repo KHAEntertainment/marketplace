@@ -6,6 +6,26 @@ Repository: `KHAEntertainment/marketplace`.
 The internal catalog name remains `kha-marketplace`; use that name after `@`
 when installing plugins.
 
+## Version pinning
+
+Each entry's `source.ref` pins the plugin to a release tag, so an install
+resolves to a known version and does not silently drift.
+
+| Plugin | Pin | Notes |
+|---|---|---|
+| `view-limits` | *unpinned* | Tracks `main`. No release tags exist yet — see below. |
+| `jev` | `v0.1.0` | |
+| `enigma` | `enigma--v0.3.2` | |
+| `authoring-kit` | `v0.1.0` | |
+| `dev-skill` | `v2.1.1` | |
+
+Cutting a release in a source repo does **not** reach users on its own: bump
+that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
+
+`view-limits` is the one exception and is deliberately left tracking `main`
+until it publishes its first release tag. Its catalog pin should be added in the
+same PR that creates that tag.
+
 ## Plugins
 
 - **view-limits** — check coding-plan credit / rate-limit status across providers
