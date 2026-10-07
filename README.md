@@ -13,7 +13,7 @@ resolves to a known version and does not silently drift.
 
 | Plugin | Pin | Notes |
 |---|---|---|
-| `view-limits` | `v0.1.29` | Tags are cut automatically on each `plugin.json` version bump. |
+| `view-limits` | `v0.1.30` | Tags are cut automatically on each `plugin.json` version bump. |
 | `jev` | `v0.1.1` | |
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
