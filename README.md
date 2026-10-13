@@ -18,6 +18,7 @@ resolves to a known version and does not silently drift.
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
 | `dev-skill` | `v2.1.1` | |
+| `handoff` | `v0.1.0` | |
 
 Cutting a release in a source repo does **not** reach users on its own: bump
 that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
@@ -111,3 +112,6 @@ Keep plugin installation identifiers such as `view-limits@kha-marketplace` as-is
 Do not recreate a repository at the old path: doing so would remove the redirect.
 
 See [GitHub's repository rename documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository).
+- **handoff** — before the context is compacted, the agent writes itself a resume
+  handoff; the session then compacts and points the agent back at it. Settings:
+  threshold percent, auto-compact. Source: `https://github.com/KHAEntertainment/handoff`.

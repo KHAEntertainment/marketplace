@@ -50,6 +50,15 @@
         "ref": "v2.1.1"
       },
       "description": "Turns Claude Code into a Tech Lead running an Issue-to-PR SOP: requirements, worktrees, delegated workers, QA, review, and retro gates."
+    },
+    {
+      "name": "handoff",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/handoff.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Asks the agent for a resume handoff before the context is compacted, compacts, then points it back at the handoff."
     }
   ]
 }
