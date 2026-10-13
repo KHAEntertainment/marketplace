@@ -59,6 +59,9 @@ per-plugin choice.
   after upgrade. Pinned to tag `enigma--v0.3.0` via the manifest's
   `source.ref`; the plugin lives at `plugins/enigma/` in the source repo
   (git-subdir source type). Source: `https://github.com/Clarit-AI/enigma.git`.
+- **handoff** — before the context is compacted, the agent writes itself a resume
+  handoff; the session then compacts and points the agent back at it. Settings:
+  threshold percent, auto-compact. Source: `https://github.com/KHAEntertainment/handoff`.
 - **authoring-kit** — author Claude Code skills, hooks, subagents and plugins
   against the live code.claude.com docs instead of stale training data or bundled
   guides. Ships the `claude-code-authoring` skill. Formerly listed as
@@ -112,6 +115,3 @@ Keep plugin installation identifiers such as `view-limits@kha-marketplace` as-is
 Do not recreate a repository at the old path: doing so would remove the redirect.
 
 See [GitHub's repository rename documentation](https://docs.github.com/en/repositories/creating-and-managing-repositories/renaming-a-repository).
-- **handoff** — before the context is compacted, the agent writes itself a resume
-  handoff; the session then compacts and points the agent back at it. Settings:
-  threshold percent, auto-compact. Source: `https://github.com/KHAEntertainment/handoff`.
