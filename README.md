@@ -18,6 +18,7 @@ resolves to a known version and does not silently drift.
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
 | `dev-skill` | `v2.1.1` | |
+| `handoff` | `v0.1.0` | |
 
 Cutting a release in a source repo does **not** reach users on its own: bump
 that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
@@ -58,6 +59,9 @@ per-plugin choice.
   after upgrade. Pinned to tag `enigma--v0.3.0` via the manifest's
   `source.ref`; the plugin lives at `plugins/enigma/` in the source repo
   (git-subdir source type). Source: `https://github.com/Clarit-AI/enigma.git`.
+- **handoff** — before the context is compacted, the agent writes itself a resume
+  handoff; the session then compacts and points the agent back at it. Settings:
+  threshold percent, auto-compact. Source: `https://github.com/KHAEntertainment/handoff`.
 - **authoring-kit** — author Claude Code skills, hooks, subagents and plugins
   against the live code.claude.com docs instead of stale training data or bundled
   guides. Ships the `claude-code-authoring` skill. Formerly listed as
