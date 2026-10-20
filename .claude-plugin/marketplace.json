@@ -46,8 +46,8 @@
       "name": "dev-skill",
       "source": {
         "source": "url",
-        "url": "https://github.com/KHAEntertainment/claude-dev-skill.git",
-        "ref": "v2.1.1"
+        "url": "https://github.com/KHAEntertainment/showrunner.git",
+        "ref": "v2.1.2"
       },
       "description": "Turns Claude Code into a Tech Lead running an Issue-to-PR SOP: requirements, worktrees, delegated workers, QA, review, and retro gates."
     }
