@@ -18,7 +18,7 @@ resolves to a known version and does not silently drift.
 | `enigma` | `enigma--v0.3.2` | |
 | `authoring-kit` | `v0.1.0` | |
 | `dev-skill` | `v2.1.1` | |
-| `handoff` | `v0.1.1` | |
+| `handoff` | `v0.1.2` | |
 
 Cutting a release in a source repo does **not** reach users on its own: bump
 that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
