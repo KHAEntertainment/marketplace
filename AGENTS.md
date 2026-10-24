@@ -10,7 +10,7 @@ When you bump a plugin's `source.ref`, or add or remove a plugin, update that pl
 
 - Check the entry against the source repo's README at the new tag: summary line, what it does, install command, "After install" line.
 - Keep the format: one collapsed `<details>` entry per plugin, under its category.
-- Never add version numbers to the README. `marketplace.json` is the only place versions live.
+- Never put a current or pinned version in the README. `marketplace.json` is the only place pins live. An upgrade note may name the version a migration starts from (for example enigma's "Upgrading from before 0.3.0?").
 
 ## Checks
 
