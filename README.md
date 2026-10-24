@@ -35,7 +35,9 @@ Before your context is compacted, the agent writes itself a resume note. The ses
 claude plugin install handoff@kha-marketplace
 ```
 
-After install: nothing to run. It triggers at 80% context (configurable) or when you type `/compact`. Needs a Claude Code build with module hooks.
+After install: nothing to run. It triggers at 80% context (configurable) or when you type `/compact`; `/compact now` compacts at once without a note. Needs a Claude Code build with module hooks.
+
+Also on Codex or OpenCode? `npx @khaentertainment/handoff` installs it for every harness on the machine. It keeps an existing `handoff@kha-marketplace` install for Claude Code, so you never end up with two.
 
 </details>
 
@@ -44,7 +46,7 @@ After install: nothing to run. It triggers at 80% context (configurable) or when
 
 <br>
 
-Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, Kimi, GLM, DeepSeek, OpenRouter) before you send work to sub-agents.
+Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, Kimi, GLM, DeepSeek, OpenRouter, Xiaomi as an experimental opt-in, or your own OpenAI- or Anthropic-compatible route) before you send work to sub-agents.
 
 ```sh
 claude plugin install view-limits@kha-marketplace
@@ -131,6 +133,16 @@ After install: ask the agent to add a key, for example "I need to add my OpenAI 
 `.claude-plugin/marketplace.json` is the source of truth. Each entry's `source.ref` pins the plugin to a release tag, so an install resolves to a known version and does not silently drift. This README deliberately lists no version numbers.
 
 Cutting a release in a source repo does **not** reach users on its own: bump that entry's `source.ref` in `.claude-plugin/marketplace.json` and merge.
+
+### Updating a plugin
+
+Every pin bump also brings that plugin's entry in this README up to date, in the same PR:
+
+1. Bump the entry's `source.ref` in `.claude-plugin/marketplace.json`.
+2. Read the source repo's README at the new tag. Check the plugin's entry above against it: the summary line, what it does, the install command, and the "After install" line. Change whatever the release changed.
+3. Keep the format: one collapsed `<details>` entry per plugin, under its category, with a one-line summary, an install command, and an "After install" line. No version numbers.
+
+Adding a plugin means a new entry in the same format, under the category that fits. Removing one means removing its entry.
 
 Two entries have sources worth knowing about:
 
