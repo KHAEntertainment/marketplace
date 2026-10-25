@@ -1,4 +1,4 @@
-# KHA Entertainment Marketplace
+[![Marketplace](https://ascii.rest/banner/Marketplace.svg?color=d62e58,f84420&font=tall&shadow=heavy&size=l)](https://ascii.rest/banner/)
 
 Claude Code plugins from KHA Entertainment. Add the marketplace once, then install only the plugins you want.
 
