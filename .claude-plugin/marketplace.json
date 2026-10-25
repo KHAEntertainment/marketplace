@@ -43,6 +43,15 @@
       "description": "Author Claude Code skills, hooks, subagents and plugins against the live code.claude.com docs instead of stale training data or bundled guides."
     },
     {
+      "name": "self-updating-skills",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/self-updating-skills.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Self-updating Agent Skills framework and harness authoring suite (self-updating-skills, claude-code-authoring, codex-authoring, opencode-authoring) powered by a single-file upkeep.sh runtime for version pin checks, reference freshness, live doc fetching, and SHA-256 frozen owner-policy blocks."
+    },
+    {
       "name": "dev-skill",
       "source": {
         "source": "url",
@@ -65,7 +74,7 @@
       "source": {
         "source": "url",
         "url": "https://github.com/KHAEntertainment/npm-publish.git",
-        "ref": "v0.1.0"
+        "ref": "v0.1.1"
       },
       "description": "Current npm publishing methodology — OIDC trusted publishing, staged publishing, provenance, and 2FA enforcement, token-free. Overrides stale training data that defaults to `npm token create` and `NPM_TOKEN` secrets."
     }

@@ -89,6 +89,21 @@ After install: the `claude-code-authoring` skill loads when you ask Claude to bu
 </details>
 
 <details>
+<summary><b>self-updating-skills</b>: builds and maintains self-updating Agent Skills and harness extensions against live docs</summary>
+
+<br>
+
+Bundles four self-updating skills (`self-updating-skills`, `claude-code-authoring`, `codex-authoring`, and `opencode-authoring`) powered by a single-file `upkeep.sh` runtime (`check`, `fetch`, `stamp`, `sync`) that verifies upstream package/tag pins, reference `Verified` dates, live `.md`/`.mdx` documentation, and SHA-256 frozen owner-policy blocks.
+
+```sh
+claude plugin install self-updating-skills@kha-marketplace
+```
+
+After install: the matching skill loads when you create/retrofit a self-updating skill or author extensions for Claude Code, OpenAI Codex CLI, or OpenCode. Also installable across all Agent Skills harnesses via `npx skills add KHAEntertainment/self-updating-skills`.
+
+</details>
+
+<details>
 <summary><b>jev</b>: guides adding TypeSafe's Jev decision model to a project</summary>
 
 <br>
