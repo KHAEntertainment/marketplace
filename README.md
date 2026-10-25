@@ -46,13 +46,13 @@ Also on Codex or OpenCode? `npx @khaentertainment/handoff` installs it for every
 
 <br>
 
-Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, Kimi, GLM, DeepSeek, OpenRouter, Xiaomi as an experimental opt-in, or your own OpenAI- or Anthropic-compatible route) before you send work to sub-agents. An optional background daemon keeps that status fresh and serves it as JSON on a loopback port.
+Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, Kimi, GLM, DeepSeek, OpenRouter, Xiaomi as an experimental opt-in, or your own OpenAI- or Anthropic-compatible route) before you send work to sub-agents. An optional background daemon keeps that status fresh and serves a read-only dashboard page on your Mac, plus an opt-in, read-only view for your phone over your local network or Tailscale, with account and host details removed.
 
 ```sh
 claude plugin install view-limits@kha-marketplace
 ```
 
-After install: run `/view-limits:setup` to add your keys, then `/view-limits` for a live view. Codex and OpenCode run the same `vl.js view` command. To keep the status fresh in the background, run `vl.js dashboard start`.
+After install: run `/view-limits:setup` to add your keys, then `/view-limits` for a live view. Codex and OpenCode run the same `vl.js view` command. To keep the status fresh in the background and open the dashboard page, run `vl.js dashboard start`; `vl.js dashboard lan enable --interface <ip>` turns on the phone view.
 
 </details>
 
