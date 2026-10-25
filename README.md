@@ -103,6 +103,21 @@ After install: ask Claude about integrating Jev and the `jev-integration` skill 
 
 </details>
 
+<details>
+<summary><b>npm-publish</b>: keeps agents on npm's current token-free publishing workflow</summary>
+
+<br>
+
+Redirects agents from deprecated `npm token create` and `NPM_TOKEN` secrets to npm's current publishing methodology: OIDC trusted publishing (`id-token: write`), staged publishing (`npm stage publish` with 2FA approval), and automatic provenance.
+
+```sh
+claude plugin install npm-publish@kha-marketplace
+```
+
+After install: the `npm-publish` skill loads automatically whenever publishing to npm is in scope. Also available for Codex, OpenCode, and other harnesses via `npx skills add KHAEntertainment/npm-publish`.
+
+</details>
+
 ### Secrets
 
 <details>

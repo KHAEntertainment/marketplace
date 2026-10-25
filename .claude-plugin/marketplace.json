@@ -59,6 +59,15 @@
         "ref": "v0.2.1"
       },
       "description": "Asks the agent for a resume handoff before the context is compacted, compacts, then points it back at the handoff."
+    },
+    {
+      "name": "npm-publish",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/npm-publish.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Current npm publishing methodology — OIDC trusted publishing, staged publishing, provenance, and 2FA enforcement, token-free. Overrides stale training data that defaults to `npm token create` and `NPM_TOKEN` secrets."
     }
   ]
 }
