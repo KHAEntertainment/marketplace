@@ -52,7 +52,7 @@ Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, K
 claude plugin install view-limits@kha-marketplace
 ```
 
-After install: run `/view-limits:setup` to add your keys, then `/view-limits` for a live report.
+After install: run `/view-limits:setup` to add your keys, then `/view-limits` for a live view. Codex and OpenCode run the same `vl.js view` command.
 
 </details>
 
