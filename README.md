@@ -52,7 +52,7 @@ Checks the credit and rate-limit status of your coding-plan accounts (MiniMax, K
 claude plugin install view-limits@kha-marketplace
 ```
 
-After install: run `/view-limits:setup` to add your keys (it also installs the small package that draws the coloured view banner), then `/view-limits` for a live view. Codex and OpenCode run the same `vl.js view` command. To keep the status fresh in the background and open the dashboard page, run `vl.js dashboard start`; `vl.js dashboard lan enable --interface <ip>` turns on the phone view.
+After install: run `/view-limits:setup` to add your keys (it also installs the small package that draws the coloured view banner), then `/view-limits` for a live view. Codex and OpenCode run the same `vl.js view` command. To keep the status fresh in the background and open the dashboard page, run `vl.js dashboard start`; `vl.js dashboard lan enable --interface <ip>` turns on the phone view. Kimi routes now use the global host `api.kimi.ai` by default; China Kimi accounts set `"region": "china"` on the route's `monitor` (GLM China accounts can do the same).
 
 </details>
 
