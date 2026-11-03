@@ -77,6 +77,15 @@
         "ref": "v0.1.1"
       },
       "description": "Current npm publishing methodology — OIDC trusted publishing, staged publishing, provenance, and 2FA enforcement, token-free. Overrides stale training data that defaults to `npm token create` and `NPM_TOKEN` secrets."
+    },
+    {
+      "name": "project-resync",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/KHAEntertainment/project-resync.git",
+        "ref": "v0.1.0"
+      },
+      "description": "Rebuilds context on a project by comparing the code against its docs, tracker, memory and git history, and reports drift with evidence. Works with whatever tracker and memory tools you have; read-only by default."
     }
   ]
 }

@@ -71,6 +71,21 @@ After install: start a run with `/dev`.
 
 </details>
 
+<details>
+<summary><b>project-resync</b>: rebuilds a project's context when the docs, tracker and code stop agreeing</summary>
+
+<br>
+
+Compares the code against the docs, plans, issue tracker, memory and git history, and reports where they disagree, with the evidence for each finding. Works with whatever tracker and memory tools you have. It's read-only: tests and installs only run if you say yes.
+
+```sh
+claude plugin install project-resync@kha-marketplace
+```
+
+After install: nothing to run. The skill loads when you ask to resync, or when a handoff or plan clearly disagrees with the repo; `/project-resync:project-resync` runs it directly. Also available for other harnesses via `npx skills add KHAEntertainment/project-resync` (tested on Claude Code and Codex).
+
+</details>
+
 ### Building with Claude
 
 <details>
