@@ -4,7 +4,7 @@ Claude Code plugins from KHA Entertainment. Add the marketplace once, then insta
 
 > [!TIP]
 > **Keep your coding harnesses up to date with [OFA — One For All](https://github.com/KHAEntertainment/ofa).**
-> Detect installed harnesses such as Claude Code, Codex, and Gemini CLI, check for updates, and choose what to update from one terminal picker.
+> Detect installed harnesses such as Claude Code and Codex, check for updates, and choose what to update from one terminal picker.
 > OFA is a standalone CLI, installed separately from these plugins: `brew install KHAEntertainment/tap/ofa` or `npm install -g @khaentertainment/ofa`.
 
 ## 1. Add the marketplace (once)
